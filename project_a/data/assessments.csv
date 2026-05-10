@@ -1,0 +1,6 @@
+assessment_id,participant_id,assessment_type,score,date
+1,1,cognitive,88,2026-02-02
+2,2,cognitive,72,2026-02-02
+3,4,cognitive,91,2026-02-04
+4,5,motor,85,2026-02-06
+5,1,motor,90,2026-03-02

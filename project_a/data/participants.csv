@@ -1,0 +1,6 @@
+id,name,age,status,enrolled_date,site
+1,Ana Torres,34,active,2026-01-03,Minneapolis
+2,Ben Okafor     ,17,active,2026-01-04,Chicago
+3,Chris Ngo,,inactive,2026-01-05,Minneapolis
+4,  Diana Reyes,28,active,2026-01-10,Chicago
+5,eve martinez,45,active,2026-01-15,Minneapolis
