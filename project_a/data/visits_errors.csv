@@ -1,0 +1,9 @@
+visit_id,participant_id,visit_type,date,completed
+1,1,intake,2026-02-01,ys
+2,2,intake,2026-02-01,no
+3,3,followup,2026-02-10,maybe
+3,4,intake,2026-02-03,yes
+5,5,intake,2026-02-05,yes
+3,5,intake,2026-01-09,12
+6,1,followup,2026-03-01,yes
+7,2,followup,2026-03-10,no
