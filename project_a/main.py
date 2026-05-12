@@ -3,6 +3,7 @@ from scripts.validate_data import validate_participants, validate_visits
 from scripts.clean_data import clean_participants
 from scripts.merge_data import merge_data
 from scripts.monthly_report import create_monthly_report
+from scripts.overdue_visits import get_overdue_visits
 
 def main():
     # Load all DataFrames
@@ -17,13 +18,14 @@ def main():
 
     # Clean the participants data
     participants = clean_participants()
-
     # Merge tables: left-merge, rename 'date' cols in visits and assessments
     full_table = merge_data(participants, visits, assessments)
-    
+
     # Monthly enrollment report
     monthly_report = create_monthly_report(full_table)
 
-    print(monthly_report)
+    # Overdue Visits
+    overdue, no_visits = get_overdue_visits(full_table)
+
 if __name__ == "__main__":
     main()
