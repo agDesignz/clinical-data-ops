@@ -22,6 +22,12 @@ def clean_participants(df=None):
     df["age_category"] = df["age"].apply(lambda a:
         "minor" if a < 18 else ("senior" if a >= 65 else "adult"))
     df["enroll_month"] = df["enrolled_date"].dt.month
+    df = df.rename(columns={
+        "enrolled_date":"enrollment date",
+        "age_category":"age category",
+        "enroll_month":"enrollment month"
+    })
+    df.columns = [name.title() for name in df.columns]
 
     return df
 
